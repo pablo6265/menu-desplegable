@@ -1,0 +1,40 @@
+
+    .image-container {
+        position: relative;
+        width: 300px; /* Puedes ajustar el ancho según tus necesidades */
+    }
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        left: -100%; /* Inicialmente fuera de la vista */
+        width: 75%;
+        background-color: rgba(0, 0, 0, 0.7); /* Color de fondo */
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: left 0.3s ease-in-out; /* Transición suave */
+    }
+    .hover-image {
+        width: 100%;
+        height: auto;
+    }
+
+ 
+    .image-container:hover .overlay {
+        left: 0; /* Al hacer hover, el overlay se desplaza a la vista */
+    }
+    /* img {
+        width: 25%;
+        background-color: #a8dadc; 
+      }
+      @keyframes mover-izquierda-derecha{
+        from{
+            transform: translateX(-100px);
+            width: 0;
+        }
+        to{
+            transform: translateX(0);
+            width: 50%;
+        }
+    } */
